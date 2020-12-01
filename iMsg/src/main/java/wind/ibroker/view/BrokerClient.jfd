@@ -1,0 +1,196 @@
+JFDML JFormDesigner: "7.0.2.6.321" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "form"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "LoginPanel"
+				"minimumSize": new java.awt.Dimension( 20, 20 )
+				auxiliary() {
+					"JavaCodeGenerator.variableName": "loginPanel"
+				}
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "QQ群列表"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 20
+					"y": 40
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "ChatRecordText"
+						"font": new java.awt.Font( "Microsoft YaHei UI Light", 0, 16 )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 315
+					"width": 495
+					"height": 245
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "监控消息记录："
+					"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 295
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "当前时间:"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 20
+					"x": 490
+					"y": 10
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane3"
+					add( new FormComponent( "javax.swing.JTree" ) {
+						name: "tree1"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+						addEvent( new FormEvent( "javax.swing.event.TreeSelectionListener", "valueChanged", "tree1ValueChanged", true ) )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 65
+					"height": 230
+					"width": 300
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "监控QQ群列表"
+					"font": #SwingDerivedFont0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 106
+					"height": 20
+					"x": 420
+					"y": 40
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane4"
+					add( new FormComponent( "javax.swing.JTree" ) {
+						name: "groupList"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+						addEvent( new FormEvent( "javax.swing.event.TreeSelectionListener", "valueChanged", "groupListValueChanged", true ) )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 430
+					"y": 70
+					"width": 285
+					"height": 235
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "configEmail"
+					"text": "配置邮箱"
+					"actionCommand": "Logout"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "configEmailActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 115
+					"height": 30
+					"x": 680
+					"y": 460
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": new FormMessage( null, "label1.text" )
+					"font": new java.awt.Font( "Microsoft YaHei UI Light", 0, 17 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 545
+					"y": 355
+					"width": 85
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "emailtextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 635
+					"y": 350
+					"width": 145
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "reset"
+					"text": "重置"
+					"actionCommand": "Logout"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 545
+					"y": 415
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "logout"
+					"text": "退出登录"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoutActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 750
+					"y": 15
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "当前用户状态："
+					"font": new java.awt.Font( "Microsoft YaHei UI Light", 1, 15 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 25
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "在线"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 1, 15 )
+					"foreground": sfield java.awt.Color darkGray
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 130
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "time"
+					"text": new FormMessage( null, "time.text" )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					addEvent( new FormEvent( "javax.swing.event.AncestorListener", "ancestorAdded", "timeAncestorAdded", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 570
+					"y": 10
+					"width": 180
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "add"
+					"text": "+"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 345
+					"y": 85
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "delete"
+					"text": "-"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 9, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 345
+					"y": 185
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 855
+				"height": 575
+				"x": 0
+				"y": -5
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 0 )
+			"size": new java.awt.Dimension( 855, 610 )
+		} )
+	}
+}
